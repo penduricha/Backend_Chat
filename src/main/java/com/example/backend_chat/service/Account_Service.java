@@ -6,5 +6,5 @@ public interface Account_Service {
     public String getString_ListAccount();
     public List<Account> getListAccount();
     public boolean addAccount(Account account);
-    public boolean deleteAccount();
+    public boolean deleteAccount(Long id_Account, String password);
 }

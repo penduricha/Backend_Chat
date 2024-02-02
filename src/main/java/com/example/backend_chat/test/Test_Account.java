@@ -17,6 +17,8 @@ public class Test_Account implements CommandLineRunner
 {
 
     private final Account_Service_Imp account_service_imp;
+
+
     @Autowired
     public Test_Account(Account_Service_Imp account_service_imp) {
         this.account_service_imp=account_service_imp;
@@ -25,12 +27,13 @@ public class Test_Account implements CommandLineRunner
     @Override
     public void run(String... args) throws Exception {
         System.out.println(account_service_imp.getString_ListAccount());
-        String path="src/main/images/doraemon.png";
+        //String path="src/main/images/doraemon.png";
 
-        Profile_User profile1 =new Profile_User("0971646631", "Van Hoa", true, "ahnn@gmail.com",java.sql.Date.valueOf("2024-01-09"), convertImageToByteArray(path));
+        //Profile_User profile1 =new Profile_User("0971646631", "Van Hoa", true, "ahnn@gmail.com",java.sql.Date.valueOf("2024-01-09"), convertImageToByteArray(path));
         //
-        Account account1=new Account("123","ManMinh");
-        account_service_imp.addAccount(account1);
+        //Account account1=new Account("123","ManMinh");
+        //account_service_imp.addAccount(account1);
+
     }
     public byte[] convertImageToByteArray(String imagePath) {
         byte[] imageBytes = null;

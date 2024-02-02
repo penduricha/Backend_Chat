@@ -7,4 +7,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface Account_Create extends CrudRepository<Account,Long>
 {
+
 }
